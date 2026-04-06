@@ -80,7 +80,7 @@ export default function StoreSignUp() {
 
             <div className="w-full md:w-1/2 hidden md:block relative bg-gray-100">
                 <img
-                    src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop"
+                    src="https://s3.us-east-1.amazonaws.com/syncservicev4.kfc.admin.prod/products/8ab993d4-d53a-4717-af40-c7621995daf8_1772632534100.png"
                     alt="Restaurante"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
