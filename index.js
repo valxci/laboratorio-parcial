@@ -30,6 +30,11 @@ app.use((req, res) => {
     res.sendFile(path.join(frontendPath, "index.html"));
 });
 
-app.listen(PORT, () => {
-    console.log("El servidor esta corriendo en el puerto :P", PORT)
-})
+// En local hacemos listen normalmente, en Vercel se exporta la app
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log("El servidor esta corriendo en el puerto :P", PORT)
+    })
+}
+
+export default app;

@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "start:prod": "node index.js",
+    "build": "npm install --prefix public/frontendclient && npm run build --prefix public/frontendclient"
   },
   "repository": {
     "type": "module",
