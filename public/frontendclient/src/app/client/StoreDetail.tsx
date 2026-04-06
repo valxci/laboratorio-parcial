@@ -26,7 +26,7 @@ export default function StoreDetail() {
                 const storeRes = await fetch('/api/stores');
                 if (storeRes.ok) {
                     const stores = await storeRes.json();
-                    const found = stores.find((s: any) => s.id === storeId);
+                    const found = stores.find((s: any) => Number(s.id) === storeId);
                     if (found) setIsOpen(found.is_open);
                 }
                 const res = await fetch(`/api/stores/${storeId}/products`);
