@@ -10,7 +10,7 @@ export default function StoreDetail() {
     const navigate = useNavigate();
     const { handleAddToCart } = useApp();
     const [products, setProducts] = useState<Product[]>([]);
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [loading, setLoading] = useState(true);
     const [alertMessage, setAlertMessage] = useState<string | null>(null);
 

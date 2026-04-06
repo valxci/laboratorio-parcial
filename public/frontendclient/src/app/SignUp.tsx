@@ -44,7 +44,8 @@ export default function SignUp() {
             if (user?.id) setUserId(user.id);
 
             setTimeout(() => {
-                navigate('/client');
+                if (role === 'delivery') navigate('/delivery');
+                else navigate('/client');
             }, 1000);
 
         } catch (err: any) {
